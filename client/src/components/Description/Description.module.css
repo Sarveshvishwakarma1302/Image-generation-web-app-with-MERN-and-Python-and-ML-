@@ -1,0 +1,77 @@
+.descriptionContainer {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.descriptionTitle {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.descriptionBox {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .descriptionBox {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+/* Image container box */
+.descriptionImage {
+  width: 45%;
+  height: 330px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Animated slider using background-image */
+.sliderImage {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center;
+  animation: changeImage 10s linear infinite;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* Keyframes to cycle background images */
+@keyframes changeImage {
+  0% {
+    background-image: url('/sample_img_4.png');
+  }
+  50% {
+    background-image: url('/sample_img_5.png');
+  }
+  100% {
+    background-image: url('/sample_img_6.png');
+  }
+  
+}
+
+.descriptionContent {
+  flex: 1;
+}
+
+.descriptionContent h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.descriptionContent p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #555;
+  text-align: justify;
+}

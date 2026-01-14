@@ -1,0 +1,146 @@
+/* .blurBackground {
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(5px); 
+  background-color: rgba(0, 0, 0, 0.2); 
+  z-index: 1000;
+} */
+
+.loginForm {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(176, 176, 172);
+  
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 90%;
+  max-width: 400px;
+  padding: 3rem;
+  border-radius: 10px;
+  z-index: 1001;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.closeIcon {
+  width: 24px;
+  height: 24px;
+  align-self: flex-end;
+  cursor: pointer;
+}
+.subtitle {
+  font-size: 1.2rem;
+  color: #110602;
+  text-align: center;
+}
+
+.inputGroup {
+  display: flex;
+  align-items: center;
+  border: 5px solid #340404;
+  padding: 0.5rem;
+  border-radius: 6px;
+  margin: 10px;
+}
+
+.inputGroup input {
+  border: none;
+  outline: none;
+  flex: 1;
+ background-color:transparent;
+  font-size: 20px;
+  font-weight: 600;
+}
+.inputGroup input::placeholder {
+  color: rgba(18, 2, 2, 0.868); /* हल्का placeholder */
+}
+
+.forgot {
+  text-align: right;
+  font-size: 1.2rem;
+  color: #333;
+  cursor: pointer;
+}
+
+.submitBtn {
+  background: linear-gradient(135deg, #e5ea9c, #e94a4c,#c5df01);
+  color: #e5eced;
+  padding: 0.8rem 2rem;
+  border:  none;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  box-shadow: 
+    0 0 10px #9ec904,
+    0 0 20px #00e0ff,
+    0 0 30px #23ab43,
+    0 0 40px #00e0ff;
+  animation: pulseGlow 2s infinite;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.submitBtn:hover {
+  background: linear-gradient(135deg, #39f14b,#506f7b, #af35d1);
+  color: #ffffff;
+  box-shadow: 
+    0 0 20px #00e0ff,
+    0 0 40px #00e0ff,
+    0 0 60px #00e0ff,
+    0 0 80px #00e0ff;
+  transform: scale(1.08);
+}
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 
+      0 0 10px #00e0ff,
+      0 0 20px #00e0ff,
+      0 0 30px #00e0ff;
+  }
+  50% {
+    box-shadow: 
+      0 0 20px #00e0ff,
+      0 0 40px #00e0ff,
+      0 0 60px #00e0ff;
+  }
+  100% {
+    box-shadow: 
+      0 0 10px #00e0ff,
+      0 0 20px #00e0ff,
+      0 0 30px #00e0ff;
+  }
+}
+
+.switchLink {
+  font-size: 1.3rem;
+  text-align: center;
+  color: #130f0f;
+}
+
+.switchLink span {
+  color: #41050c;
+  cursor: pointer;
+  font-weight: bold;
+}
+h1{
+  text-align: center;
+} 
+ .cardMessage {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #333;
+  font-size: 1.2rem;
+}

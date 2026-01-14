@@ -1,0 +1,68 @@
+.stepsContainer {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: linear-gradient(-45deg, #eeeef8, #3a3a5f, #2a2a4f, #e2e2e6);
+
+}
+
+.stepsContainer h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #faf3f3;
+}
+
+.stepsContainer p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #f3efef;
+}
+
+.stepsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.stepBox {
+  background-color: rgb(196, 244, 246);
+  border-radius: 12px;
+  padding: 1.8rem 1rem;
+box-shadow:
+  0 8px 16px rgba(0, 0, 0, 0.12),
+  0 16px 32px rgba(0, 0, 0, 0.1),
+  0 25px 50px rgba(0, 0, 0, 0.08),
+  0 0 12px rgba(31, 116, 242, 0.2); /* blue glow */
+
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+.stepBox:hover {
+  transform: rotateX(8deg) rotateY(8deg) scale(1.05);
+  box-shadow: 
+    0 8px 16px rgba(0, 0, 0, 0.12),
+    0 16px 32px rgba(0, 0, 0, 0.1),
+    0 25px 50px rgba(0, 0, 0, 0.08);
+}
+
+.stepBox img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 1rem;
+}
+
+.stepBox h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+  color: #111;
+}
+
+.stepBox p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.4;
+}

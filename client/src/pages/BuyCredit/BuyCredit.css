@@ -1,0 +1,122 @@
+.buy-credit-container {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+  width: 100%;
+  background: linear-gradient(180deg, #dcb9d8, #dcf6e0,#01181a);
+  margin-top: 4.4rem;
+}
+
+.plans-button {
+  width: 200px;
+  background-color: #bf55e0;
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  font-size: 1.8rem;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-bottom: 25px;
+  transition: background-color 0.3s ease;
+  margin-top: 5rem;
+}
+
+.plans-button:hover {
+  background-color: #260423;
+}
+
+h1 {
+  font-weight: 700;
+  margin-bottom: 30px;
+  font-size: 2.4rem;
+}
+
+.plan-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.plan-card {
+  background-color: #d5dfaa;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgb(0 0 0 / 0.1);
+  padding: 22px 30px;
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+  margin-bottom: 5rem;
+}
+
+.plan-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgb(0 0 0 / 0.15);
+}
+
+.plan-card img {
+  width: 60px;
+  margin-bottom: 18px;
+}
+.priceId{
+  font-weight: 600;
+  font-size: 20px;
+}
+.price {
+  color: #007bff;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.purchase {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, #e01ff2, #3f6bef);
+  color: white;
+  font-size: 1.5rem;
+  padding: 0.8rem 3.8rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  margin: 1rem 0 2rem;
+  transition: all 0.3s ease;
+  max-width: 370px;
+  box-shadow: 0 6px 15px rgba(75, 8, 16, 0.4);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.purchase:hover {
+  background: linear-gradient(135deg, #12cc28, #b42381);
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(146, 149, 3, 0.5);
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(31, 116, 242, 0.6);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(31, 116, 242, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(31, 116, 242, 0);
+  }
+}
+
+.purchase {
+  animation: pulse 2s infinite;
+}
+/* Responsive */
+@media (max-width: 640px) {
+  .plan-list {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .plan-card {
+    width: 100%;
+  }
+}

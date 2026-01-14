@@ -1,0 +1,50 @@
+.footerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background: linear-gradient(180deg,#e1b3e5, #e8ec83, #d9e466);
+  color:#121212;
+  flex-wrap: wrap;
+  border-radius: 50px;
+}
+
+.footerLeft {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.footerLeft p {
+  font-size: 1.3rem;
+  color:#131313;
+  margin-left: 25rem;
+  font-weight: 600;
+}
+.navImage {
+  width: 140px;
+  background: transparent;
+  border: none;
+  font-size: 40px;
+  font-weight: 600;
+  font-style:oblique;
+  color: #185378;
+}
+.footerRight {
+  display: flex;
+  gap: 1rem;
+}
+
+.footerRight img {
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.footerRight img:hover {
+  transform: scale(1.1);
+  background-color: rgb(134, 2, 50);
+  border-radius: 50px;
+}
